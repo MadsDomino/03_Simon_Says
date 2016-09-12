@@ -57,12 +57,6 @@ namespace _03_Simon_Says
         }
 
         [TestMethod]
-        public void ShouldRepeatANumberOfTimes()
-        {
-            Simon simon = new Simon();
-            Assert.AreEqual("hello hello hello", simon.Repeat("hello", 3));
-        }
-        [TestMethod]
         public void ReturnsFirstLetterOfWord()
         {
             Simon simon = new Simon();
@@ -95,7 +89,7 @@ namespace _03_Simon_Says
             Simon simon = new Simon();
             Assert.AreEqual("Oh", simon.FirstWord("Oh Dear"));
         }
-        [TestMethod]
+        /*[TestMethod]
         public void CapitilizeAWord()
         {
             Simon simon = new Simon();
@@ -118,6 +112,6 @@ namespace _03_Simon_Says
         {
             Simon simon = new Simon();
             Assert.AreEqual("The Bridge over the River Kwai", simon.Titleize("the bridge over the river kwai"));
-        }
+        }*/
     }
 }
