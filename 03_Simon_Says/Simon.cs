@@ -47,7 +47,32 @@
             {
                 if (char.IsWhiteSpace(x[i]))
                 {
-                    i = z;
+                    break;
+                }
+                else
+                {
+                    text = text + x[i];
+                }
+            }
+            return text;
+        }
+
+        public string Titleize(string x)
+        {
+            string z = "";
+            string text = "";
+            text = text + char.ToUpper(x[0]);
+            for (int i = 1; i<x.Length; i++)
+            {
+                if (i != x.Length)
+                {
+                    z = z + x[i + 1];
+                }
+
+                if (char.IsWhiteSpace(x[i]) && z != "a")
+                {
+                    text = text + " " + char.ToUpper(x[i+1]);
+                    i++;
                 }
                 else
                 {
