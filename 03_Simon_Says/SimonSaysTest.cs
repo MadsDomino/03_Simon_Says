@@ -107,11 +107,11 @@ namespace _03_Simon_Says
             Simon simon = new Simon();
             Assert.AreEqual("War and Peace", simon.Titleize("war and peace"));
         }
-        /*[TestMethod]
+        [TestMethod]
         public void CapitilizeLittleWordsInBeginningOfSentence()
         {
             Simon simon = new Simon();
             Assert.AreEqual("The Bridge over the River Kwai", simon.Titleize("the bridge over the river kwai"));
-        }*/
+        }
     }
 }

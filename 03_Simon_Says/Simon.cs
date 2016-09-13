@@ -59,19 +59,18 @@
 
         public string Titleize(string x)
         {
-            string z = "";
             string text = "";
             text = text + char.ToUpper(x[0]);
-            for (int i = 1; i<x.Length; i++)
+            string test = "";
+            for (int i = 1; i < x.Length; i++)
             {
-                if (i != x.Length)
+                if (i != x.Length - 1)
                 {
-                    z = z + x[i + 1];
+                    test = "" + x[i + 1];
                 }
-
-                if (char.IsWhiteSpace(x[i]) && z != "a")
+                if (char.IsWhiteSpace(x[i]) && test != "a" && test != "o" && test != "t")
                 {
-                    text = text + " " + char.ToUpper(x[i+1]);
+                    text = text + " " + char.ToUpper(x[i + 1]);
                     i++;
                 }
                 else
